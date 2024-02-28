@@ -16,7 +16,8 @@ io.on('connection', (socket) => {
     console.log('user disconnected');
   });
 
-  // Example: listen for a custom event
+  // Example: listen for a custom event (Not really needed in this case, but just to show how to do it)
+  // This is for the client send a message to the server
   socket.on('transferEvents', (msg) => {
     console.log('message: ' + msg);
   });
